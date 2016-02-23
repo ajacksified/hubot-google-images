@@ -10,7 +10,7 @@ describe 'google-images', ->
       respond: sinon.spy()
       hear: sinon.spy()
 
-    require('../src/google-images')(@robot)
+    require('../index')(@robot)
 
   it 'registers a respond listener', ->
     expect(@robot.respond).to.have.been.calledWith(/hello/)
